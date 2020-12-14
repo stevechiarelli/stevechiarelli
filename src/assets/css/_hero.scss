@@ -1,0 +1,140 @@
+// hero section
+
+.hero-wrapper {
+    position: relative;
+    background: url("../images/hero-mobile.jpg");
+    background-size: cover;
+    background-position: center right;
+    width: 100%;
+    height: 100vh;
+}
+
+.hero-content {
+    margin-top: 275px;
+    opacity: 1;
+    -webkit-animation-name: headline;
+    animation-name: headline;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+
+    h1, h4 {
+        line-height: 1.0;
+        width: 65%;
+    }
+
+    h1 {
+        font-weight: 800;
+        margin: 0;
+    }
+
+    h4 {
+        font-weight: 400;
+        margin-top: 5px;
+    }
+
+    span {
+        display: block;
+    }
+}
+
+.triangle-down {
+	width: 0;
+	height: 0;
+	border-left: 7px solid transparent;
+	border-right: 7px solid transparent;
+    border-top: 7px solid #fff;
+    position: absolute;
+    bottom: 175px;
+    left: 50%;
+    -webkit-animation-name: arrow;
+    animation-name: arrow;
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+}
+
+@keyframes headline {
+    from {
+        opacity: 0;
+        margin-top: 250px;
+    }
+    to {
+        opacity: 1;
+        margin-top: 275px;
+    }
+}
+
+@keyframes arrow {
+    from {
+        opacity: 0;
+        bottom: 0;
+    }
+    to {
+        opacity: 1;
+        bottom: 175px;
+    }
+}
+
+@media (min-width: 600px) {
+    .hero-wrapper {
+        background: url("../images/hero.jpg");
+        background-size: cover;
+        background-position: center;
+    }
+
+    .triangle-down {
+        position: absolute;
+        bottom: 50px;
+        left: 50%;
+    }
+
+    @keyframes arrow {
+        from {
+            opacity: 0;
+            bottom: 0;
+        }
+        to {
+            opacity: 1;
+            bottom: 50px;
+        }
+    }
+}
+
+@media (max-height: 415px) {
+    .hero-content {
+        margin-top: 100px;
+    }
+
+    @keyframes headline {
+        from {
+            opacity: 0;
+            margin-top: 75px;
+        }
+        to {
+            opacity: 1;
+            margin-top: 100px;
+        }
+    }
+}
+
+@media (min-height: 1366px) {
+    .hero-wrapper {
+        background: url("../images/hero-mobile.jpg");
+        background-size: cover;
+        background-position: center right;
+    }
+
+    .hero-content {
+        margin-top: 600px;
+    }
+
+    @keyframes headline {
+        from {
+            opacity: 0;
+            margin-top: 575px;
+        }
+        to {
+            opacity: 1;
+            margin-top: 600px;
+        }
+    }
+}

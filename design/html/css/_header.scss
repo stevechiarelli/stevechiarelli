@@ -1,0 +1,80 @@
+// header and nav menu
+
+.navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: transparent;
+    -webkit-animation-name: navbar;
+    animation-name: navbar;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+
+    .logo {
+        color: $text-light;
+        font-weight: 700;
+        font-size: 0.8em;
+        margin-top: 3px;
+    }
+}
+
+nav {
+    ul {
+        display: flex;
+
+        li button, li a {
+            display: inline;
+            background: transparent;
+            border: 0;
+            color: $text-light;
+            text-align: center;
+            font-size: 0.6em;
+            font-weight: 400;
+            margin-left: 12px;
+            padding: 0;
+            outline: none;
+            cursor: pointer;
+        }
+
+        li button:hover, li a:hover {
+            color: $primary-hover;
+        }
+    }
+}
+
+@keyframes navbar {
+    from {
+        top: -10px;
+    }
+    to {
+        top: 0;
+    }
+}
+
+@media (min-width: 768px) {
+    header {
+        .logo {
+            font-size: 1em;
+        }
+    }
+
+    nav {
+        ul {
+            li button, li a {
+                font-size: 0.9em;
+            }
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    header {
+        margin-top: 5px;
+    }
+}
