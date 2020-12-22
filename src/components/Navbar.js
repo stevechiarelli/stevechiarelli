@@ -23,8 +23,8 @@ class Navbar extends React.Component {
                         <nav>
                             <ul className="nav-links">
                                 <li><button name="#about" onClick={this.handleClick}>About</button></li>
-                                <li><button name="#contact" onClick={this.handleClick}>Contact</button></li>
-                                <li><a href={this.state.resumeURL} target="_blank" rel="noreferrer">Resume</a></li>
+                                <li><button name="#work" onClick={this.handleClick}>My Work</button></li>
+                                <li><button name="#contact" onClick={this.handleClick}>Hire Me</button></li>
                             </ul>
                         </nav>
                     </header>

@@ -6,9 +6,7 @@
     left: 0;
     width: 100%;
     background: transparent;
-    -webkit-animation-name: navbar;
     animation-name: navbar;
-    -webkit-animation-duration: 1s;
     animation-duration: 1s;
 }
 
@@ -36,7 +34,7 @@ nav {
             text-align: center;
             font-size: 0.6em;
             font-weight: 400;
-            margin-left: 12px;
+            margin-left: 13px;
             padding: 0;
             outline: none;
             cursor: pointer;
@@ -68,6 +66,7 @@ nav {
         ul {
             li button, li a {
                 font-size: 0.9em;
+                margin-left: 18px;
             }
         }
     }

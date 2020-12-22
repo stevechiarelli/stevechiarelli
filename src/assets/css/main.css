@@ -77,8 +77,8 @@ hr {
 }
 
 .btn-primary:hover {
-  color: #cccccc;
-  border: 3px solid #cccccc;
+  color: #dddddd;
+  border: 3px solid #dddddd;
 }
 
 .hidden {
@@ -147,9 +147,9 @@ hr {
   width: 100%;
   background: transparent;
   -webkit-animation-name: navbar;
-  animation-name: navbar;
+          animation-name: navbar;
   -webkit-animation-duration: 1s;
-  animation-duration: 1s;
+          animation-duration: 1s;
 }
 
 header {
@@ -182,14 +182,14 @@ nav ul li button, nav ul li a {
   text-align: center;
   font-size: 0.6em;
   font-weight: 400;
-  margin-left: 12px;
+  margin-left: 13px;
   padding: 0;
   outline: none;
   cursor: pointer;
 }
 
 nav ul li button:hover, nav ul li a:hover {
-  color: #cccccc;
+  color: #dddddd;
 }
 
 @-webkit-keyframes navbar {
@@ -216,6 +216,7 @@ nav ul li button:hover, nav ul li a:hover {
   }
   nav ul li button, nav ul li a {
     font-size: 0.9em;
+    margin-left: 18px;
   }
 }
 
@@ -235,12 +236,16 @@ nav ul li button:hover, nav ul li a:hover {
 }
 
 .hero-content {
-  margin-top: 275px;
-  opacity: 1;
+  margin-top: 18em;
+  opacity: 0;
   -webkit-animation-name: headline;
-  animation-name: headline;
+          animation-name: headline;
   -webkit-animation-duration: 1s;
-  animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 
 .hero-content h1, .hero-content h4 {
@@ -269,33 +274,38 @@ nav ul li button:hover, nav ul li a:hover {
   border-right: 7px solid transparent;
   border-top: 7px solid #fff;
   position: absolute;
-  bottom: 175px;
+  bottom: 15%;
   left: 50%;
+  opacity: 0;
   -webkit-animation-name: arrow;
-  animation-name: arrow;
-  -webkit-animation-duration: 2s;
-  animation-duration: 2s;
+          animation-name: arrow;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 
 @-webkit-keyframes headline {
   from {
     opacity: 0;
-    margin-top: 250px;
+    margin-top: 17em;
   }
   to {
     opacity: 1;
-    margin-top: 275px;
+    margin-top: 18em;
   }
 }
 
 @keyframes headline {
   from {
     opacity: 0;
-    margin-top: 250px;
+    margin-top: 17em;
   }
   to {
     opacity: 1;
-    margin-top: 275px;
+    margin-top: 18em;
   }
 }
 
@@ -306,7 +316,7 @@ nav ul li button:hover, nav ul li a:hover {
   }
   to {
     opacity: 1;
-    bottom: 175px;
+    bottom: 15%;
   }
 }
 
@@ -317,7 +327,7 @@ nav ul li button:hover, nav ul li a:hover {
   }
   to {
     opacity: 1;
-    bottom: 175px;
+    bottom: 15%;
   }
 }
 
@@ -327,55 +337,30 @@ nav ul li button:hover, nav ul li a:hover {
     background-size: cover;
     background-position: center;
   }
-  .triangle-down {
-    position: absolute;
-    bottom: 50px;
-    left: 50%;
-  }
-  @-webkit-keyframes arrow {
-    from {
-      opacity: 0;
-      bottom: 0;
-    }
-    to {
-      opacity: 1;
-      bottom: 50px;
-    }
-  }
-  @keyframes arrow {
-    from {
-      opacity: 0;
-      bottom: 0;
-    }
-    to {
-      opacity: 1;
-      bottom: 50px;
-    }
-  }
 }
 
-@media (max-height: 415px) {
+@media (orientation: landscape) and (max-height: 415px) {
   .hero-content {
-    margin-top: 100px;
+    margin-top: 6em;
   }
   @-webkit-keyframes headline {
     from {
       opacity: 0;
-      margin-top: 75px;
+      margin-top: 5em;
     }
     to {
       opacity: 1;
-      margin-top: 100px;
+      margin-top: 6em;
     }
   }
   @keyframes headline {
     from {
       opacity: 0;
-      margin-top: 75px;
+      margin-top: 5em;
     }
     to {
       opacity: 1;
-      margin-top: 100px;
+      margin-top: 6em;
     }
   }
 }
@@ -387,26 +372,26 @@ nav ul li button:hover, nav ul li a:hover {
     background-position: center right;
   }
   .hero-content {
-    margin-top: 600px;
+    margin-top: 39em;
   }
   @-webkit-keyframes headline {
     from {
       opacity: 0;
-      margin-top: 575px;
+      margin-top: 39em;
     }
     to {
       opacity: 1;
-      margin-top: 600px;
+      margin-top: 40em;
     }
   }
   @keyframes headline {
     from {
       opacity: 0;
-      margin-top: 575px;
+      margin-top: 39em;
     }
     to {
       opacity: 1;
-      margin-top: 600px;
+      margin-top: 40em;
     }
   }
 }
@@ -416,14 +401,14 @@ nav ul li button:hover, nav ul li a:hover {
   background-size: cover;
   background-position: right;
   width: 100%;
-  height: 500px;
+  height: 650px;
   margin-top: 75px;
 }
 
 #about p {
   font-size: 0.9em;
   line-height: 1.5;
-  width: 80%;
+  width: 90%;
 }
 
 @media (min-width: 768px) {
@@ -432,11 +417,11 @@ nav ul li button:hover, nav ul li a:hover {
     background-size: cover;
     background-position: center;
     width: 100%;
-    height: 500px;
+    height: 600px;
     margin-top: 75px;
   }
   #about p {
-    font-size: 1.1em;
+    font-size: 1em;
     line-height: 1.6;
     width: 70%;
   }
@@ -632,7 +617,7 @@ nav ul li button:hover, nav ul li a:hover {
 
 .contact-content p {
   line-height: 1.5;
-  font-size: 0.9em;
+  font-size: 1em;
 }
 
 @media (min-width: 768px) {
@@ -640,6 +625,9 @@ nav ul li button:hover, nav ul li a:hover {
     padding: 14px 30px 14px 30px;
     font-size: 1em;
     margin-left: 2px;
+  }
+  .contact-content p {
+    font-size: 1.1em;
   }
 }
 
