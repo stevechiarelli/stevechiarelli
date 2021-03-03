@@ -4,9 +4,9 @@ import {DataContext} from "../AppData";
 class Contact extends React.Component {
     static contextType = DataContext;
 
-    url = "";
-    database = "";
-    user = "";
+    url = "https://cms.chiatek.com/users/api";
+    database = "spchiare_stevechiarelli";
+    user = "1002";
 
     constructor() {
         super();

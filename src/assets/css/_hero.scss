@@ -10,7 +10,7 @@
 }
 
 .hero-content {
-    margin-top: 18em;
+    margin-top: 17em;
     opacity: 0;
     animation-name: headline;
     animation-duration: 1s;
@@ -30,6 +30,10 @@
     h4 {
         font-weight: 400;
         margin-top: 5px;
+    }
+
+    button {
+        margin-top: 20px;
     }
 
     span {
@@ -56,11 +60,11 @@
 @keyframes headline {
     from {
         opacity: 0;
-        margin-top: 17em;
+        margin-top: 16em;
     }
     to {
         opacity: 1;
-        margin-top: 18em;
+        margin-top: 17em;
     }
 }
 
@@ -80,6 +84,15 @@
         background: url("../images/hero.jpg");
         background-size: cover;
         background-position: center;
+    }
+}
+
+@media (min-width: 768px) {
+    .hero-content {
+        .btn-primary {
+            padding: 14px 30px 14px 30px;
+            font-size: 1em;
+        }
     }
 }
 

@@ -236,7 +236,7 @@ nav ul li button:hover, nav ul li a:hover {
 }
 
 .hero-content {
-  margin-top: 18em;
+  margin-top: 17em;
   opacity: 0;
   -webkit-animation-name: headline;
           animation-name: headline;
@@ -261,6 +261,10 @@ nav ul li button:hover, nav ul li a:hover {
 .hero-content h4 {
   font-weight: 400;
   margin-top: 5px;
+}
+
+.hero-content button {
+  margin-top: 20px;
 }
 
 .hero-content span {
@@ -290,22 +294,22 @@ nav ul li button:hover, nav ul li a:hover {
 @-webkit-keyframes headline {
   from {
     opacity: 0;
-    margin-top: 17em;
+    margin-top: 16em;
   }
   to {
     opacity: 1;
-    margin-top: 18em;
+    margin-top: 17em;
   }
 }
 
 @keyframes headline {
   from {
     opacity: 0;
-    margin-top: 17em;
+    margin-top: 16em;
   }
   to {
     opacity: 1;
-    margin-top: 18em;
+    margin-top: 17em;
   }
 }
 
@@ -336,6 +340,13 @@ nav ul li button:hover, nav ul li a:hover {
     background: url("../images/hero.jpg");
     background-size: cover;
     background-position: center;
+  }
+}
+
+@media (min-width: 768px) {
+  .hero-content .btn-primary {
+    padding: 14px 30px 14px 30px;
+    font-size: 1em;
   }
 }
 
