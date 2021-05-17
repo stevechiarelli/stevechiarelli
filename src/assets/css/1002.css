@@ -11,7 +11,7 @@ body, html {
 }
 
 body {
-  background: #040203;
+  background: transparent;
   color: #FFFFFF;
   font-family: "Poppins", sans-serif;
   font-size: 100%;
