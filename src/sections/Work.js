@@ -14,6 +14,12 @@ function Work() {
     if (data != null) {
         let section = data.filter(item => item.work);
         let work = section[0].work;
+
+        work.sort(function(a,b) {
+            return new Date(b.fields.date) - new Date(a.fields.date);
+        });
+
+        console.log(work)
         featured = work.filter(item => item.fields.featured === 1);
         notFeatured = work.filter(item => item.fields.featured === 0);
 

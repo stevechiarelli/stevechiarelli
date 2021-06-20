@@ -30,15 +30,12 @@ class Contact extends React.Component {
     }
 
     handleSubmit = () => {
-        this.setState({
-            iframe: true
-        });
-    }
-
-    handleLoading = () => {
         this.setState({ loading: true }, () => {  
             setTimeout(() => {
-               this.setState({ loading: false });
+               this.setState({ 
+                   iframe: true,
+                   loading: false 
+                });
              }, 2000);
         });
     }
@@ -123,15 +120,13 @@ class Contact extends React.Component {
                                         <button className="btn-primary" type="submit">SUBMIT</button>
                                     </div>
                                 </div>
+                                {this.state.loading === true ? <Loading /> : null}
                                 <div style={this.state.iframe === true ? {display: "block"} : {display: "none"}}>
-                                    {this.state.loading === true ? <Loading /> : null}
                                     <iframe 
                                         className="iframe"
-                                        style={this.state.loading === false ? {display: "block"} : {display: "none"}}
                                         title="iframe"
                                         name="iframe" 
                                         scrolling="no"
-                                        onLoad={this.handleLoading}
                                         src={this.url}>
                                     </iframe>
                                 </div>
