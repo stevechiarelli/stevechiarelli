@@ -11,7 +11,7 @@ class DataProvider extends React.Component {
     }
 
     componentDidMount() {
-        fetch("stevechiarelli.json")
+        fetch("")
         .then(response => response.json())
         .then(json => {
             this.setState({
