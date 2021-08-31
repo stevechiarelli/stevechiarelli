@@ -22,7 +22,7 @@ class Hero extends React.Component {
                 <div className="wrapper">
                     <div className="hero-content">
                         <h1 dangerouslySetInnerHTML={{ __html: hero.heading }} />
-                        <h4>{hero.subheading}</h4>
+                        <p>{hero.subheading}</p>
                         <button className="btn-primary" name="#work" onClick={this.handleClick}>SEE MY WORK</button>
                     </div>
                 </div>

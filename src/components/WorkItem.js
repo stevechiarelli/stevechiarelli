@@ -7,7 +7,7 @@ function WorkItem(props) {
         <div className="item">
             <img src={image} alt={title} />
             <div className="card">
-                {props.featured ? <h5>featured project</h5> : ""}
+                {props.featured ? <h4>featured project</h4> : ""}
                 <h3>{title}</h3>
                 <p><span>description: </span>{description}</p>
                 <p><span>built with: </span>{built_with}</p>

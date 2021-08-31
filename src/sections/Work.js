@@ -19,7 +19,6 @@ function Work() {
             return new Date(b.fields.date) - new Date(a.fields.date);
         });
 
-        console.log(work)
         featured = work.filter(item => item.fields.featured === 1);
         notFeatured = work.filter(item => item.fields.featured === 0);
 

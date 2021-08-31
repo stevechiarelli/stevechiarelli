@@ -248,7 +248,7 @@ nav ul li button:hover, nav ul li a:hover {
           animation-fill-mode: forwards;
 }
 
-.hero-content h1, .hero-content h4 {
+.hero-content h1, .hero-content p {
   line-height: 1.0;
   width: 60%;
 }
@@ -258,13 +258,13 @@ nav ul li button:hover, nav ul li a:hover {
   margin: 0;
 }
 
-.hero-content h4 {
+.hero-content p {
   font-weight: 400;
   margin-top: 5px;
 }
 
 .hero-content button {
-  margin-top: 20px;
+  margin-top: 4px;
 }
 
 .hero-content span {
@@ -460,7 +460,7 @@ nav ul li button:hover, nav ul li a:hover {
   margin-bottom: 10px;
 }
 
-#work .featured-container .item .card h5, #work .work-container .item .card h5 {
+#work .featured-container .item .card h4, #work .work-container .item .card h4 {
   text-transform: uppercase;
   margin-bottom: -5px;
 }
