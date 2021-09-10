@@ -102,7 +102,7 @@ hr {
 
 .wrapper {
     padding: 1em 1.5em;
-    max-width: 1200px;
+    max-width: 1400px;
     margin: 0 auto;
 }
 
@@ -140,5 +140,11 @@ hr {
 
     .wrapper {
         padding: 1em 4em;
+    }
+}
+
+@media (min-width: 1600px) {
+    .wrapper {
+        padding: 1em 0;
     }
 }

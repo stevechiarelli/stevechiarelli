@@ -5,9 +5,9 @@ import Loading from "../components/Loading";
 class Contact extends React.Component {
     static contextType = DataContext;
 
-    url = "";
-    database = "";
-    user = "";
+    url = "https://cms.chiatek.com/users/api";
+    database = "spchiare_stevechiarelli";
+    user = "1002";
 
     constructor() {
         super();
